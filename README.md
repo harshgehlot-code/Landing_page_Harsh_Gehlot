@@ -211,25 +211,3 @@ Computer Science Engineer | Full Stack & ML Enthusiast
 GitHub: [https://github.com/harshgehlot-code](https://github.com/harshgehlot-code)
 
 ---
-
-## 📌 Notes
-
-* No framework-specific naming used in repository (as per instructions)
-* Images are stored in `media/` after upload
-* SVGs are preferred for performance
-* Code is structured for scalability
-
----
-
-```
-
----
-
-### If you want next:
-- I can **align screenshots with README**
-- Add **API documentation**
-- Improve **GitHub repo presentation**
-- Review admin UX vs Flipr expectations
-
-Just tell me.
-```
