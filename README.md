@@ -1,11 +1,3 @@
-Below is a **professionally rewritten and expanded `README.md`** tailored specifically for your repository
-**`Landing_page_Harsh_Gehlot`**, aligned with the **Flipr Full-Stack Task PDF**, and suitable for **evaluation + public GitHub review**.
-
-You can **directly replace your existing `README.md`** with the content below.
-
----
-
-```md
 # Real Trust – Full Stack Landing Page & Admin Panel
 
 A full-stack web application built as part of a Full Stack Development assignment.  
