@@ -1,5 +1,7 @@
 # Real Trust – Full Stack Landing Page & Admin Panel
 
+🔗 **Live Demo:** https://harshgehlot.pythonanywhere.com/
+
 A full-stack web application built as part of a Full Stack Development assignment.  
 The project consists of a **responsive landing page** and an **admin panel** to manage projects, clients, contact form submissions, and newsletter subscriptions.
 
@@ -184,9 +186,10 @@ python manage.py runserver
 
 ## 🌐 Deployment
 
-* Backend deployed using platforms like **Render / Railway / AWS**
-* Static & media files properly configured
-* Repository is public and deployment-ready
+- **Live Application:** https://harshgehlot.pythonanywhere.com/
+- Backend hosted on **PythonAnywhere**
+- Django Admin enabled for content management
+- Static and media files properly configured
 
 ---
 
