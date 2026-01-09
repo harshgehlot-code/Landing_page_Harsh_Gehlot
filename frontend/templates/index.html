@@ -1,0 +1,342 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Trust - Real Estate Services</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                {% comment %} <i class="bi bi-house-check"></i> Real Trust {% endcomment %}
+                <img src="static\images\Lead Generation Landing page (Images)\logo.svg" alt="Logo image">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients">CLIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-choos-us">WHY CHOOSE US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" style="margin-top: 76px;" >
+        <div class="container" id="contact">
+            <div class="row align-items-center" >
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-primary mb-4">Consultation, design, & Marketing </h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form" >
+                        <div class="form-header">
+                            <h3 class="text-white mb-4">Get a Free Consultation</h3>
+                        </div>
+                        <form id="contactForm" method="POST">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="fullName" id="fullName" placeholder="Full Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email Address"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="city" id="city" placeholder="Any City" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">Get Quick Quote</button>
+                            <div id="contactAlert" class="mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-why-section" >
+        <div class="container">
+            <div class="row align-items-center gy-4" id="about">
+                <div class="col-lg-6">
+                    <div class="about-illustration position-relative">
+                        <div class="shape-circle sm"></div>
+                        <div class="shape-circle md"></div>
+                        <div class="shape-circle lg"></div>
+                        <img src="static\images\Lead Generation Landing page (images)\Ellipse 11.svg" alt="Main Realtor"
+                            class="main-img" onerror="this.style.display='none'">
+                        <!-- <img src="{% static 'images/Lead Generation Landing page (images)/Ellipse 12.svg' %}" alt="Happy Clients"
+                            class="small-img img-1" onerror="this.style.display='none'">
+                        <img src="{% static 'images/Lead Generation Landing page (images)/Ellipse 13.svg' %}"
+                            alt="Consultation" class="small-img img-2" onerror="this.style.display='none'"> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="text-uppercase text-primary fw-bold mb-2">Not Your Average Realtor</p>
+                    <h2 class="fw-bold text-primary mb-3">We blend consultation, design, and marketing</h2>
+                    <p class="text-muted mb-4">
+                        With an eye for selling property, standout design, and effective marketing, we help homeowners
+                        get top dollar on the market.
+                        Our team guides you from strategy through staging to closing, ensuring a seamless experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-5" id="why-choos-us">
+                <div class="col-12 text-center mb-4">
+                    <h3 class="text-primary fw-bold mb-2">Why Choose Us?</h3>
+                    <div class="d-flex justify-content-center mb-3">
+                        <div style="width:80px;height:4px;background:var(--primary-blue);border-radius:4px;"></div>
+                    </div>
+                    <p class="text-muted">Three pillars that consistently deliver results.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="why-card">
+                        <img src="static/images/Lead Generation Landing page (Icons)/circle-dollar-sign.svg" alt="ROI"
+                            onerror="this.style.display='none'">
+                        <h5>Potential ROI</h5>
+                        <p>We position your property to maximize returns with data-driven pricing, staging, and
+                            marketing.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="why-card">
+                        <img src="static/images/Lead Generation Landing page (Icons)/paintbrush-2.svg" alt="Design"
+                            onerror="this.style.display='none'">
+                        <h5>Design</h5>
+                        <p>Thoughtful design, staging, and creative direction to present your home at its best.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="why-card">
+                        <img src="static/images/Lead Generation Landing page (Icons)/home.svg" alt="Marketing" onerror="this.style.display='none'">
+                        <h5>Marketing</h5>
+                        <p>Integrated campaigns across digital and print to reach the right buyers quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="about-section">
+    <div class="container">
+
+        <!-- Decorative Shapes -->
+        <img src="static/images/Lead Generation Landing page (shapes)/Subtract.svg" class="shape shape-circle" alt="">
+        <img src="static/images/Lead Generation Landing page (shapes)/Subtract-2.svg" class="shape shape-square" alt="">
+        <img src="static/images/Lead Generation Landing page (shapes)/Subtract-3.svg" class="shape shape-corner" alt="">
+
+        <!-- Image Row -->
+        <div class="about-images">
+            <div class="about-img small left">
+                <img src="static/images/Lead Generation Landing page (images)/pexels-brett-sayles-2881232.svg" alt="Meeting Outside">
+            </div>
+
+            <div class="about-img large center">
+                <img src="static/images/Lead Generation Landing page (images)/pexels-andres-ayrton-6578391.svg" alt="Office Discussion">
+            </div>
+
+            <div class="about-img small right">
+                <img src="static/images/Lead Generation Landing page (images)/pexels-fauxels-3182834.svg" alt="Client Meeting">
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content">
+            <h2 class="about-title">About Us</h2>
+            <h6 class="about-title">
+                We help businesses grow<br>
+                through strategic solutions
+            </h6>
+
+            <p class="about-description">
+                With years of experience in consulting, design, and marketing, we are
+                dedicated to delivering value-driven solutions that build trust,
+                long-term relationships, and measurable success for our clients.
+            </p>
+
+            <a href="#" class="about-btn">Learn More</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+    <!-- Our Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <p class="section-subtitle">
+                We know what buyers are looking for and suggest projects that will bring clients
+                top dollar for the sale of their homes.
+            </p>
+
+            <div class="loading-spinner" id="projectsLoading">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div class="row g-4" id="projectsContainer">
+                <!-- Projects will be loaded here -->
+            </div>
+
+            <div class="empty-state" id="projectsEmpty" style="display: none;">
+                <i class="bi bi-folder-x"></i>
+                <h4>No Projects Available</h4>
+                <p>Check back later for our latest projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Clients Section -->
+    <section id="clients" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Happy Clients</h2>
+
+            <div class="loading-spinner" id="clientsLoading">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div class="row g-4" id="clientsContainer">
+                <!-- Clients will be loaded here -->
+            </div>
+
+            <div class="empty-state" id="clientsEmpty" style="display: none;">
+                <i class="bi bi-people"></i>
+                <h4>No Client Testimonials Available</h4>
+                <p>Check back later for client testimonials.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    {% comment %} <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 class="text-primary fw-bold">Subscribe to Our Newsletter</h3>
+                <p class="text-muted">Stay updated with our latest projects and real estate insights</p>
+            </div>
+            <div class="newsletter-form">
+                <form id="newsletterForm" class="d-flex gap-2">
+                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter Email Address"
+                        required>
+                    <button type="submit" class="btn btn-primary-custom">Subscribe</button>
+                </form>
+                <div id="newsletterAlert" class="mt-3"></div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <!-- Newsletter / CTA Section -->
+    <section id="newsletter" class="newsletter-section">
+        <div class="newsletter-overlay">
+            <div class="container text-center">
+                <h3 class="newsletter-title">
+                    Learn more about our listing process, as well as our<br>
+                    additional staging and design work.
+                </h3>
+
+                <a href="#" class="btn btn-outline-light newsletter-btn">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Bar -->
+    <section class="newsletter-bar">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Navigation Links -->
+                <div class="col-lg-6 col-md-12 mb-3 mb-lg-0">
+                    <ul class="newsletter-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Subscribe Form -->
+                <div class="col-lg-6 col-md-12">
+                    <form id="newsletterForm" class="newsletter-form-bar">
+                        <span class="subscribe-text">Subscribe Us</span>
+                        <input type="email" id="newsletterEmail" class="newsletter-input"
+                            placeholder="Enter Email Address" required>
+                        <button type="submit" class="newsletter-btn">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">All Rights Reserved 2023</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+
