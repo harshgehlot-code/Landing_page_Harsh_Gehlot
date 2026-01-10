@@ -7,6 +7,7 @@ class ClientSerializer(serializers.ModelSerializer):
         model = Client
         fields = ['id', 'image', 'name', 'description', 'designation', 'created_at', 'updated_at']
         read_only_fields = ['id', 'created_at', 'updated_at']
+       
 
 
 
