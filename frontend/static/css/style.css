@@ -52,23 +52,12 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* padding: 4rem 0; */
-    /* min-height: 70vh; */
     display: flex;
     align-items: center;
     min-height: 80vh;
     margin-top:50px;
 }
-/* Hero Section 
-    .hero-section {
-    margin-top: 76px;
-    background-image: url("../images/Lead Generation Landing page (Images)/young-couple-examining-blueprints-with-real-estate-agent-while-buying-new-home 1.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-*/
+
 
 
 /* About & Why Choose sections */
@@ -203,16 +192,7 @@ body {
     margin-bottom: 80px;
     z-index: 2;
 }
- /* .about-img {
-    position: relative;
-    background-color: #fff;
-    border-radius: 6px;
-    overflow: hidden;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
 
 
 .about-img {
@@ -228,16 +208,7 @@ body {
     display: block;
     border-radius: 6px;
 }
- /* .about-img.small {
-    width: 220px;
-    height: 300px; /* required when using background images 
-}
 
-.about-img.large {
-    width: 420px;
-    height: 480px;
-    z-index: 3;
-} */
 
 
 /* Small images */
@@ -261,22 +232,7 @@ body {
     width: 420px;
     z-index: 3;
 }
-/* Left image */
-/* .about-img.small.left {
-    transform: translateY(-40px);
-     background-image: url("../images/Lead Generation Landing page (images)/pexels-brett-sayles-2881232.svg"); 
-} */
 
-/* Center image */
-/* .about-img.large.center {
-    background-image: url("../images/Lead Generation Landing page (images)/pexels-andres-ayrton-6578391.svg");
-} */
-
-/* Right image */
-/* .about-img.small.right {
-    transform: translateY(40px);
-    background-image: url("../images/Lead Generation Landing page (images)/pexels-fauxels-3182834.svg");
-} */
 
 
 
@@ -293,17 +249,7 @@ body {
     border-radius: 8px;
 }
 
-/* .about-img.large::before {
-    content: "";
-    position: absolute;
-    width: 110%;
-    height: 110%;
-    background: #f2f7ff;
-    top: -15px;
-    left: -15px;
-    z-index: -1;
-    border-radius: 8px;
-} */
+
 
 
 /* =========================
@@ -389,20 +335,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .project-card, .client-card {
     background: white;
     border-radius: 10px;
@@ -444,28 +376,7 @@ body {
     overflow: hidden;
 }
 
-/* .client-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 1rem;
-    display: block;
-    border: 4px solid var(--light-blue);
-}
 
-.client-designation {
-    color: var(--light-gray);
-    font-size: 0.9rem;
-    font-style: italic;
-}
-
-.client-testimonial {
-    color: var(--light-gray);
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
-    font-style: italic;
-} */
 
 /* Section Title */
 .section-title {
@@ -544,36 +455,6 @@ body {
 }
 
 
-
-
-/* .contact-form-section {
-    background: var(--primary-blue);
-    color: white;
-    padding: 4rem 0;
-}
-
-.contact-form {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-}
-
-.form-control, .form-select {
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.9);
-    padding: 0.75rem;
-}
-
-.form-control:focus, .form-select:focus {
-    background: white;
-    border-color: var(--secondary-orange);
-    box-shadow: 0 0 0 0.2rem rgba(255, 107, 53, 0.25);
-} 
-*/
-
-
 /* Form container – semi-transparent blue */
 .contact-form {
     background: rgba(47, 62, 99, 0.85); /* transparency applied */
@@ -609,16 +490,7 @@ body {
 }
 
 
-/* 
-.newsletter-section {
-    background: var(--light-blue);
-    padding: 3rem 0;
-}
 
-.newsletter-form {
-    max-width: 500px;
-    margin: 0 auto;
-} */
 
 .newsletter-section {
     background-image: url("../images/Lead Generation Landing page (Images)/Rectangle.svg");
@@ -944,12 +816,6 @@ body {
         font-size: 30px;
     }
 }
-
-
-
-
-
-
 
 .why-card {
     background: white;
